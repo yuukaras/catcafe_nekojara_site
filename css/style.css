@@ -1,0 +1,440 @@
+/* リセットｃｓｓ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Kaisei Opti", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* フルードイメージ化 */
+img {
+    max-width: 100%;
+    height: auto;
+    place-content: center;
+}
+
+/* 共通：幅設定クラス */
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 共通：section設定クラス */
+section {
+    
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* 共通：見出し2設定クラス */
+html {
+    background-color: rgb(238, 247, 224);
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px;
+    border-radius: 10px 10px 30px 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(247, 224, 239);
+}
+
+
+/* ヘッダー */
+header .inner {
+    max-width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    width: 250px;
+    font-size: 1.5rem;
+    padding: 10px 10px 0px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.logoclass {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 80px;
+}
+
+
+header p {
+    /* width: 100px; */
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    display: block;
+    width: 60px;
+    color: black;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: darkgreen;
+}
+
+/* キービジュアル */
+#slideshow {
+    max-width: 880px;
+    height: auto;
+    place-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.slickimage {
+    position: relative;
+}
+
+.slick-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: #fff;
+    /* 文字色（画像の暗さに合わせて変更） */
+    text-align: center;
+    width: 80%;
+}
+
+.slick-content p {
+    font-size: 3rem;
+    -webkit-text-stroke: 4px #000000;
+    /* 縁の太さと色 */
+    paint-order: stroke fill;
+    /* 縁が内側に食い込むのを防ぐ */
+}
+
+
+/* about */
+.about_lead {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.8;
+
+}
+
+.about_lead span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.gazoposition {
+    display: flex;
+    justify-content: center;
+}
+
+.jaramen {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 250px;
+    padding: max-content;
+}
+
+
+/* 猫スタッフ */
+.catslist {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.catslist li img {
+    border-radius: 90px;
+    margin-bottom: 30px;
+}
+
+.catname {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(247, 246, 207);
+    padding: 20px;
+}
+
+.catsinfo_jarasi {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.catslist li p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section2 a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border: 1px dashed #000000;
+    border-radius: 50%;
+    width: 250px;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    background-color: rgb(208, 247, 207);
+}
+
+.section2 a:hover {
+    color: darkgreen;
+}
+
+/* じゃら氏のフキダシ */
+.speechBubble {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 24px 16px;
+    border: 2px solid #000000;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    left: calc(50% - 300px);
+    top: 10px;
+}
+
+.speechBubble::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 61%;
+    border-style: solid;
+    border-width: 20px 0 0 20px;
+    border-color: #000000 transparent transparent;
+    translate: -50% 100%;
+    transform: skew(64deg);
+    transform-origin: top;
+}
+
+.speechBubble::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 61%;
+    border-style: solid;
+    border-width: 15.2px 0 0 15.2px;
+    border-color: #ffffff transparent transparent;
+    translate: calc(-50% + 0.4px) 100%;
+    transform: skew(64deg);
+    transform-origin: top;
+}
+
+/* メニュー */
+.menulist {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    gap: 20px;
+}
+
+.menulist span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* 浮いてるじゃら氏 */
+.float-img {
+    margin-top: 20px;
+    width: 200px;
+    animation: floatAnim 3s ease-in-out infinite;
+}
+
+@keyframes floatAnim {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floatjyara {
+    margin-left: 45%;
+}
+
+/* アクセス */
+.map iframe {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.access_lead {
+    text-align: center;
+}
+
+/* フッター */
+footer p {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: darkgreen;
+}
+
+
+h2 {
+    transform: rotate(-15deg);
+    transform-origin: left top;
+    /* 例: 左上を起点にする */
+}
+
+.cp_h1title {
+    color: #ffffff;
+    background: #80DEEA;
+    border: dashed 1px #ffffff;
+    /*ステッチ部分*/
+    box-shadow: 0px 0px 0px 5px #80DEEA;
+    /*外側のライン*/
+}
+
+.flip-img {
+    transition: transform 0.3s ease;
+    /* なめらかに反転させる */
+}
+
+/* 左右に反転 */
+/* .flip-img:active {
+  transform: scaleX(-1); 
+} */
+
+.flip-img:hover {
+    transform: scaleX(-1);
+}
+
+/* モバイル対応 */
+@media(max-width:767px) {
+    header .inner {
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .gazoposition {
+        flex-wrap: wrap;
+    }
+    .logoclass {
+   padding-left: 20px;
+}
+
+    .jaramen {
+        margin-top: 5px;
+        margin-left: 50px;
+        width: 150px;
+    }
+
+    .speechBubble {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 24px 16px;
+        border: 2px solid #000000;
+        border-radius: 9999px;
+        background-color: #ffffff;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        left: calc(50% - 180px);
+        top: 10px;
+    }
+
+    .speechBubble::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        border-style: solid;
+        border-width: 20px 10px 0 10px;
+        border-color: #000000 transparent transparent;
+        translate: -50% 100%;
+        transform: skew(1deg);
+        transform-origin: top;
+    }
+
+    .speechBubble::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        border-style: solid;
+        border-width: 15.5px 7.8px 0 7.8px;
+        border-color: #ffffff transparent transparent;
+        translate: -50% 100%;
+        transform: skew(1deg);
+        transform-origin: top;
+    }
+
+    .catslist {
+        flex-wrap: wrap;
+        /* padding: 20px; */
+        margin-top: 20px;
+    }
+
+    .menulist {
+        flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* タップで左右に反転するつもり */
+.flip-img:active {
+  transform: scaleX(-1); 
+}
+
+}
