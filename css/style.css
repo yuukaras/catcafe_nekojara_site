@@ -32,28 +32,26 @@ img {
 
 /* 共通：section設定クラス */
 section {
-    
     margin-top: 20px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
 /* 共通：見出し2設定クラス */
-html {
-    background-color: rgb(238, 247, 224);
-}
+
 
 h2 {
     font-size: 1.3rem;
     color: black;
     text-align: center;
-    margin-bottom: 30px;
     border: 1px;
-    border-radius: 10px 10px 30px 30px;
+    border-radius: 38% 62% 52% 48% / 44% 36% 64% 56% ;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(247, 224, 239);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -147,7 +145,6 @@ nav ul li a:hover {
 }
 
 
-
 /* about */
 .about_lead {
     width: 70%;
@@ -155,7 +152,6 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     line-height: 1.8;
-
 }
 
 .about_lead span {
@@ -167,7 +163,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     background-color: rgb(208, 247, 207);
-    border-radius: 50%;
+    border-radius: 43% 24% 45% 19% / 55% 35% 49% 28% ;
 }
 
 .jaramen {
@@ -186,23 +182,28 @@ nav ul li a:hover {
     justify-content: space-around;
     gap: 20px;
     background-color: rgb(208, 247, 207);
-    border-radius: 50%;
+    border-radius: 43% 24% 45% 19% / 55% 35% 49% 28%  ;
 }
 
 .catslist li img {
-    border-radius: 90px;
+    border-radius: 53% 33% 41% 38% / 30% 39% 43% 48%  ;
     margin-bottom: 30px;
 }
 
-.catname {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 10px;
-    background-color: rgb(247, 246, 207);
-    padding: 20px;
-    border-radius: 60%;
-}
 
+h3{
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1px;
+    border: 1px;
+    border-radius: 43% 24% 45% 19% / 55% 35% 49% 28% ;
+    width: 180px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(250, 220, 165);    
+}
 .catsinfo_jarasi {
     margin-top: 0px;
     text-align: center;
@@ -219,16 +220,14 @@ nav ul li a:hover {
     text-align: center;
     display: block;
     border: 1px dashed #000000;
-    border-radius: 50%;
+    border-radius: 43% 24% 45% 19% / 55% 35% 49% 28% ;
     width: 250px;
     margin: 10px auto;
     margin-bottom: 30px;
     background-color: rgb(208, 247, 207);
-    /* border-radius: 30%; */
+
 }
-/* .section2 {
-background-color: rgb(201, 242, 243)
-} */
+
 
 .section2 a:hover {
     color: darkgreen;
@@ -285,7 +284,7 @@ background-color: rgb(201, 242, 243)
     font-size: 0.8rem;
     gap: 20px;
     background-color: rgb(247, 246, 207);
-    border-radius: 50%;
+    border-radius: 43% 24% 45% 19% / 55% 35% 49% 28% ;
     padding-bottom: 10px;
 }
 
@@ -356,14 +355,6 @@ h2 {
     /* 例: 左上を起点にする */
 }
 
-.cp_h1title {
-    color: #ffffff;
-    background: #80DEEA;
-    border: dashed 1px #ffffff;
-    /*ステッチ部分*/
-    box-shadow: 0px 0px 0px 5px #80DEEA;
-    /*外側のライン*/
-}
 
 .flip-img {
     transition: transform 0.3s ease;
